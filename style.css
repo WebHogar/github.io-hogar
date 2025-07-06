@@ -84,11 +84,7 @@ a.btn-outline-light:focus {
 
 /* Banner */
 .banner {
-    background: linear-gradient(100deg,
-            rgba(0, 0, 0, 0.7),
-            /* Oscurece la imagen para que el texto resalte */
-            rgba(0, 0, 0, 0.2)),
-        url('./img/img_inicio2.webp') center/cover no-repeat;
+    background: linear-gradient(100deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), center/cover no-repeat;
     /* Imagen de fondo para el banner */
     min-height: 70vh;
     /* Mayor altura para el banner */
@@ -372,39 +368,8 @@ footer .social-icons a:hover {
 
 
 /* Estilos específicos para la página del blog */
-.blog-header {
-    background: linear-gradient(100deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)),
-        url('./img/blog1.jpg') center/cover no-repeat;
-    min-height: 40vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    margin-bottom: 3rem;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-.blog-header2 {
-    background: linear-gradient(100deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)),
-        url('./img/blog2.jpg') center/cover no-repeat;
-    min-height: 40vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    margin-bottom: 3rem;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-.blog-header3 {
-    background: linear-gradient(100deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)),
-        url('./img/blog3.jpg') center/cover no-repeat;
+.blog-header, .blog-header2, .blog-header3 {
+    background: linear-gradient(100deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), center/cover no-repeat;
     min-height: 40vh;
     display: flex;
     align-items: center;
@@ -497,7 +462,7 @@ footer .social-icons a:hover {
 }
 
 /* Estilos específicos para la página Acerca de Nosotros */
-.about-header {
+.about-header, .faq-header {
     background: linear-gradient(100deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), var(--primary-color);
     /* Generic background */
     min-height: 40vh;
@@ -548,20 +513,6 @@ footer .social-icons a:hover {
 
 
 /* Estilos específicos para la página de Preguntas Frecuentes */
-.faq-header {
-    background: linear-gradient(100deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), var(--primary-color);
-    /* Generic background */
-    min-height: 40vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    margin-bottom: 3rem;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
 
 .faq-section h2 {
     color: var(--primary-color);

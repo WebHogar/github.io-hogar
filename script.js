@@ -59,3 +59,27 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+/* imagenes con lazy loading */
+document.addEventListener("DOMContentLoaded", function() {
+  const targets = document.querySelectorAll('[data-bg]');
+  if ("IntersectionObserver" in window) {
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const bgUrl = el.getAttribute('data-bg');
+          el.style.backgroundImage = `linear-gradient(100deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url('${bgUrl}')`;
+          observer.unobserve(el);
+        }
+      });
+    });
+    targets.forEach(el => observer.observe(el));
+  } else {
+    // Fallback para navegadores antiguos
+    targets.forEach(el => {
+      const bgUrl = el.getAttribute('data-bg');
+      el.style.backgroundImage = `linear-gradient(100deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url('${bgUrl}')`;
+    });
+  }
+});
