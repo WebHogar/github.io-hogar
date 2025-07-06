@@ -95,17 +95,15 @@ a.btn-outline-light:focus {
     text-align: center;
 }
 
-.banner h3 {
+.banner h2 {
     font-size: 1.5rem;
-    /* Tamaño de fuente ajustado */
     font-weight: 500;
     color: #ffffff;
     text-shadow: 1px 1px 2px #000;
 }
 
-.banner h2 {
+.banner h1 {
     font-size: 4rem;
-    /* Tamaño de fuente más grande para el título principal */
     font-weight: 700;
     color: #ffffff;
     text-shadow: 1px 1px 3px #000;
@@ -265,7 +263,7 @@ a.btn-outline-light:focus {
 /* Footer */
 footer {
     background-color: var(--primary-color);
-    color: var(--secondary-color);
+    color: #ffffff;
     padding: 3rem 0;
 }
 
@@ -293,13 +291,13 @@ footer ul {
 footer ul li {
     margin-bottom: 0.8rem;
     font-weight: 300;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 footer .social-icons a {
     font-size: 1.5rem;
     margin-right: 1rem;
-    color: var(--secondary-color);
+    color: #ffffff;
     transition: color 0.3s ease;
 }
 
@@ -320,14 +318,14 @@ footer .social-icons a:hover {
     background-color: var(--tertiary-color);
     color: #ffffff;
     border-radius: 50px;
-    /* Botón más redondeado */
     padding: 10px 20px;
     font-weight: 600;
+    border: none;
 }
 
 .btn-dark:hover {
-    border-color: var(--secondary-color) !important;
-    background-color: var(--primary-color) !important;
+    background-color: var(--secondary-color) !important;
+    color: var(--tertiary-color) !important;
 }
 
 /* Responsive adjustments */
@@ -381,6 +379,7 @@ footer .social-icons a:hover {
     border-bottom-right-radius: 15px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
+
 
 .blog-header h1,
 .about-header h1,
