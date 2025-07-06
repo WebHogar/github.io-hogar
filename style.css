@@ -88,7 +88,7 @@ a.btn-outline-light:focus {
             rgba(0, 0, 0, 0.7),
             /* Oscurece la imagen para que el texto resalte */
             rgba(0, 0, 0, 0.2)),
-        url('./img/img_inicio2.jpg') center/cover no-repeat;
+        url('./img/img_inicio2.webp') center/cover no-repeat;
     /* Imagen de fondo para el banner */
     min-height: 70vh;
     /* Mayor altura para el banner */
