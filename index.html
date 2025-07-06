@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="/img/logo.png" />
+    <title>Diseño de Interiores - Tu Espacio, Tu Estilo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="50" tabindex="0">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="/img/logo_text.png" alt="logo" width="100" />
+            </a>
+            <!-- menu movil -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicios">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portafolio">Portafolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <section id="inicio" class="banner">
+        <div class="container text-center text-white">
+            <h2 class="drop-shadow-lg">Diseño de Interiores que Inspira</h2>
+            <h3 class="drop-shadow-md">Transformamos tus espacios en ambientes únicos y funcionales</h3>
+            <a href="#contacto" class="btn btn-lg btn-outline-light mt-4">Agenda una Consulta</a>
+        </div>
+    </section>
+
+    <!-- Sección de Características/Ventajas -->
+    <section class="container py-5">
+        <div class="row g-4 text-center">
+            <div class="col-6 col-md-3">
+                <div
+                    class="bg-white rounded p-4 shadow-sm h-100 d-flex flex-column justify-content-center align-items-center">
+                    <i class="fa-solid fa-lightbulb fa-2x mb-2"></i>
+                    <div class="fw-bold">Creatividad</div>
+                    <small>Ideas innovadoras para cada proyecto</small>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div
+                    class="bg-white rounded p-4 shadow-sm h-100 d-flex flex-column justify-content-center align-items-center">
+                    <i class="fa-solid fa-handshake fa-2x mb-2"></i>
+                    <div class="fw-bold">Asesoramiento Personalizado</div>
+                    <small>Soluciones a tu medida</small>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div
+                    class="bg-white rounded p-4 shadow-sm h-100 d-flex flex-column justify-content-center align-items-center">
+                    <i class="fa-solid fa-palette fa-2x mb-2"></i>
+                    <div class="fw-bold">Estilo y Armonía</div>
+                    <small>Ambientes que reflejan tu personalidad</small>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div
+                    class="bg-white rounded p-4 shadow-sm h-100 d-flex flex-column justify-content-center align-items-center">
+                    <i class="fa-solid fa-check-circle fa-2x mb-2"></i>
+                    <div class="fw-bold">Calidad Garantizada</div>
+                    <small>Resultados excepcionales</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Servicios -->
+    <section class="bg-servicios py-5" id="servicios">
+        <div class="container">
+            <h1 class="text-center mb-5 text-color fw-semibold">Nuestros Servicios</h1>
+            <div class="service-block mb-5">
+                <div class="row align-items-center">
+                    <div class="col-md-6 order-md-1">
+                        <img src="/img/categori1.jpg" alt="Diseño Residencial"
+                            class="img-fluid service-image rounded-3 shadow-sm">
+                    </div>
+                    <div class="col-md-6 order-md-2">
+                        <h2 class="service-title my-3">Diseño Residencial</h2>
+                        <p class="service-description">Nos enorgullece brindar a nuestros clientes soluciones de diseño
+                            interior que transforman sus hogares en espacios únicos y acogedores. Nos enfocamos en la
+                            funcionalidad, la estética y la personalidad de cada cliente, creando ambientes que reflejan
+                            sus sueños y estilo de vida.</p>
+                        <a href="#contacto" class="btn btn-lg btn-outline-light mt-4">Solicitar información</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-block mb-5">
+                <div class="row align-items-center">
+                    <div class="col-md-6 order-md-2">
+                        <img src="/img/categoria2.jpg" alt="Diseño Comercial"
+                            class="img-fluid service-image rounded-3 shadow-sm">
+                    </div>
+                    <div class="col-md-6 order-md-1">
+                        <h2 class="service-title my-3">Diseño Comercial</h2>
+                        <p class="service-description">El diseño de interiores para espacios comerciales es clave para
+                            atraer clientes y mejorar la experiencia de compra. Creamos ambientes que no solo son
+                            estéticamente agradables, sino también funcionales y optimizados para el flujo de trabajo y
+                            la interacción con el cliente, impulsando el éxito de su negocio.</p>
+                        <a href="#contacto" class="btn btn-lg btn-outline-light mt-4">Solicitar información</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-block">
+                <div class="row align-items-center">
+                    <div class="col-md-6 order-md-1">
+                        <img src="/img/categoria3.jpg" alt="Remodelaciones"
+                            class="img-fluid service-image rounded-3 shadow-sm">
+                    </div>
+                    <div class="col-md-6 order-md-2">
+                        <h2 class="service-title my-3">Remodelaciones Integrales</h2>
+                        <p class="service-description">Transformamos espacios existentes con remodelaciones integrales
+                            que van desde la planificación inicial hasta la ejecución final. Nuestro equipo se encarga
+                            de cada detalle para asegurar que el resultado supere sus expectativas, modernizando y
+                            optimizando su hogar o negocio.</p>
+                        <a href="#contacto" class="btn btn-lg btn-outline-light mt-4">Solicitar información</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Portafolio -->
+    <section class="container px-4 py-5 flex-grow-1" id="portafolio">
+        <h1 class="text-center mb-5 text-color fw-semibold">Portafolio</h1>
+
+        <!-- Carrusel para móviles -->
+        <div id="portafolioCarousel" class="carousel slide d-block d-lg-none mb-4" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="card rounded-3 shadow-sm overflow-hidden product-card mx-auto"
+                        style="max-width: 20rem;">
+                        <img src="/img/portafolio1.jpg" class="card-img-top" alt="Proyecto de Diseño de Interiores 1">
+                        <div class="card-body p-4">
+                            <h3 class="card-title fs-5 fw-semibold text-dark mb-2">Residencia Moderna</h3>
+                            <p class="card-text text-secondary mb-3">Diseño minimalista y funcional para un hogar
+                                contemporáneo.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card rounded-3 shadow-sm overflow-hidden product-card mx-auto"
+                        style="max-width: 20rem;">
+                        <img src="/img/portafolio2.jpg" class="card-img-top" alt="Proyecto de Diseño de Interiores 2">
+                        <div class="card-body p-4">
+                            <h3 class="card-title fs-5 fw-semibold text-dark mb-2">Oficina Creativa</h3>
+                            <p class="card-text text-secondary mb-3">Espacios de trabajo inspiradores y productivos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card rounded-3 shadow-sm overflow-hidden product-card mx-auto"
+                        style="max-width: 20rem;">
+                        <img src="/img/portafolio3.jpg" class="card-img-top" alt="Proyecto de Diseño de Interiores 3">
+                        <div class="card-body p-4">
+                            <h3 class="card-title fs-5 fw-semibold text-dark mb-2">Restaurante Temático</h3>
+                            <p class="card-text text-secondary mb-3">Ambiente único que realza la experiencia culinaria.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card rounded-3 shadow-sm overflow-hidden product-card mx-auto"
+                        style="max-width: 20rem;">
+                        <img src="/img/portafolio4.jpg" class="card-img-top" alt="Proyecto de Diseño de Interiores 4">
+                        <div class="card-body p-4">
+                            <h3 class="card-title fs-5 fw-semibold text-dark mb-2">Tienda Boutique</h3>
+                            <p class="card-text text-secondary mb-3">Diseño que maximiza la exhibición y atrae clientes.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#portafolioCarousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#portafolioCarousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+
+        <!-- Cuadrícula para escritorio -->
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 g-4 d-none d-lg-flex">
+            <!-- Tarjeta de Proyecto 1 -->
+            <div class="col">
+                <div class="card rounded-3 shadow-sm overflow-hidden product-card h-100">
+                    <img src="/img/portafolio1.jpg" class="card-img-top" alt="Proyecto de Diseño de Interiores 1">
+                    <div class="card-body p-4">
+                        <h3 class="card-title fs-5 fw-semibold text-dark mb-2">Residencia Moderna</h3>
+                        <p class="card-text text-secondary mb-3">Diseño minimalista y funcional para un hogar
+                             contemporáneo.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta de Proyecto 2 -->
+            <div class="col">
+                <div class="card h-100 rounded-3 shadow-sm overflow-hidden product-card">
+                    <img src="/img/portafolio2.jpg" class="card-img-top" alt="Proyecto de Diseño de Interiores 2">
+                    <div class="card-body p-4">
+                        <h3 class="card-title fs-5 fw-semibold text-dark mb-2">Oficina Creativa</h3>
+                        <p class="card-text text-secondary mb-3">Espacios de trabajo inspiradores y productivos.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta de Proyecto 3 -->
+            <div class="col">
+                <div class="card h-100 rounded-3 shadow-sm overflow-hidden product-card">
+                    <img src="/img/portafolio3.jpg" class="card-img-top" alt="Proyecto de Diseño de Interiores 3">
+                    <div class="card-body p-4">
+                        <h3 class="card-title fs-5 fw-semibold text-dark mb-2">Restaurante Temático</h3>
+                        <p class="card-text text-secondary mb-3">Ambiente único que realza la experiencia culinaria.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta de Proyecto 4 -->
+            <div class="col">
+                <div class="card h-100 rounded-3 shadow-sm overflow-hidden product-card">
+                    <img src="/img/portafolio4.jpg" class="card-img-top" alt="Proyecto de Diseño de Interiores 4">
+                    <div class="card-body p-4">
+                        <h3 class="card-title fs-5 fw-semibold text-dark mb-2">Tienda Boutique</h3>
+                        <p class="card-text text-secondary mb-3">Diseño que maximiza la exhibición y atrae clientes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Galería de Imágenes (Adaptada para inspiración) -->
+    <section class="my-5 bg-light">
+        <div class="row g-4 mx-1">
+            <!-- Columna Izquierda (2 imágenes apiladas) -->
+            <div class="col-12 col-md-4 d-flex flex-column stacked-images">
+                <img src="/img/galeria1.jpg" alt="Imagen de un salón con sofá y plantas"
+                    class="img-fluid rounded-3 shadow-sm mb-3">
+                <img src="/img/galeria4.jpg" alt="Imagen de un dormitorio acogedor"
+                    class="img-fluid rounded-3 shadow-sm">
+            </div>
+
+            <!-- Columna Central (Imagen grande) -->
+            <div class="col-12 col-md-4">
+                <img src="/img/galeria3.jpg" alt="Imagen de una sala de estar moderna con muebles naranjas"
+                    class="img-fluid rounded-3 shadow-sm h-100 object-fit-cover">
+            </div>
+
+            <!-- Columna Derecha (2 imágenes apiladas) -->
+            <div class="col-12 col-md-4 d-flex flex-column stacked-images">
+                <img src="/img/galeria2.jpg" alt="Imagen de una cocina moderna con isla"
+                    class="img-fluid rounded-3 shadow-sm mb-3">
+                <img src="/img/galeria5.jpg" alt="Imagen de un patio exterior con sombrilla"
+                    class="img-fluid rounded-3 shadow-sm">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Blogs -->
+    <section class="container py-5" id="blog">
+        <h1 class="text-center mb-5 text-color fw-semibold">Blog de Diseño</h1>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="/img/blog1.jpg" class="card-img-top" alt="Consejos para organizar tu hogar" />
+                    <div class="card-body">
+                        <h5 class="card-title">Tendencias en Diseño de Interiores 2025</h5>
+                        <p class="card-text">
+                            <small class="text-muted">1 de Julio 2025</small>
+                        </p>
+                        <p class="card-text">
+                            Descubre las últimas tendencias que marcarán el diseño de interiores este año. Desde colores
+                            vibrantes hasta materiales sostenibles, te ayudamos a estar a la vanguardia.
+                        </p>
+                        <a href="/blog1.html" class="btn btn-solid-primary">Leer más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="/img/blog2.jpg" class="card-img-top" alt="Iluminación en el diseño de interiores" />
+                    <div class="card-body">
+                        <h5 class="card-title">La Importancia de la Iluminación en tu Hogar</h5>
+                        <p class="card-text">
+                            <small class="text-muted">15 de Junio 2025</small>
+                        </p>
+                        <p class="card-text">
+                            Aprende cómo la iluminación adecuada puede transformar por completo un espacio, creando
+                            ambientes acogedores y funcionales.
+                        </p>
+                        <a href="/blog2.html" class="btn btn-solid-primary">Leer más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="/img/blog3.jpg" class="card-img-top" alt="Diseño de espacios pequeños" />
+                    <div class="card-body">
+                        <h5 class="card-title">Maximizando Espacios Pequeños: Soluciones de Diseño</h5>
+                        <p class="card-text">
+                            <small class="text-muted">1 de Junio 2025</small>
+                        </p>
+                        <p class="card-text">
+                            Descubre trucos y estrategias de diseño para hacer que los espacios pequeños se sientan más
+                            amplios y funcionales sin sacrificar el estilo.
+                        </p>
+                        <a href="/blog3.html" class="btn btn-solid-primary">Leer más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer id="contacto">
+        <div class="bg-primary-color text-secondary-color pt-5 pb-3">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <h5 class="fw-bold mb-3 text-white">Contacto</h5>
+                        <ul class="list-unstyled text-white">
+                            <li>Dirección: Caracas, Venezuela.</li>
+                            <li>Teléfono: 58 424-128-8604</li>
+                            <li>Email: info@disenodeinteriores.com</li>
+                        </ul>
+                        <div class="d-flex gap-3 mt-2">
+                            <a href="#" class="text-white"><i class="fab fa-facebook fa-lg"></i></a>
+                            <a href="#" class="text-white"><i class="fab fa-instagram fa-lg"></i></a>
+                            <a href="#" class="text-white"><i class="fab fa-pinterest fa-lg"></i></a>
+                            <a href="#" class="text-white"><i class="fab fa-youtube fa-lg"></i></a>
+                            <a href="#" class="text-white"><i class="fab fa-tiktok fa-lg"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <h5 class="fw-bold mb-3 text-white">Información</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="/acerca.html" class="text-white text-decoration-none">Acerca de Nosotros</a></li>
+                            <li><a href="/preguntas.html" class="text-white text-decoration-none">Preguntas Frecuentes</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h5 class="fw-bold mb-3 text-white">Boletín informativo</h5>
+                        <form>
+                            <p>Recibe las últimas novedades, proyectos y consejos de diseño. ¡Suscríbete!</p>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" placeholder="Ingresa tu correo..." />
+                            </div>
+                            <button type="submit" class="btn btn-dark">
+                                Suscríbete
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/81581fb069.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

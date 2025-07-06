@@ -1,0 +1,612 @@
+:root {
+    --primary-color: #0E777A;
+    /* Verde azulado */
+    --secondary-color: #D3D5D7;
+    /* Gris claro */
+    --tertiary-color: #020202;
+    /* Negro */
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    /* Fuente moderna y legible */
+    background-color: var(--secondary-color);
+    color: var(--tertiary-color);
+}
+
+/* Navbar */
+.navbar {
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-nav .nav-link {
+    color: var(--primary-color);
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-link:hover {
+    color: var(--tertiary-color) !important;
+}
+
+/* Common button styles for btn-outline-success and btn-outline-light */
+.btn-outline-success,
+.banner a.btn-outline-light,
+a.btn-outline-light {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+    transition: all 0.3s ease;
+    background-color: transparent;
+    /* Ensure default is transparent */
+}
+
+.btn-outline-success:hover,
+.btn-outline-success:focus,
+.btn-outline-success:active,
+.btn-outline-success.active,
+.show>.btn-outline-success.dropdown-toggle,
+.banner a.btn-outline-light:hover,
+.banner a.btn-outline-light:focus,
+a.btn-outline-light:hover,
+a.btn-outline-light:focus {
+    color: var(--secondary-color) !important;
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+    transform: translateY(-3px);
+    /* Effect for elevation */
+}
+
+/* Specific adjustments for banner button */
+.banner a.btn-outline-light,
+a.btn-outline-light {
+    background-color: var(--primary-color);
+    /* Override for banner default */
+    color: #ffffff;
+    border: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding: 12px 30px;
+    border-radius: 50px;
+}
+
+.banner a.btn-outline-light:hover,
+.banner a.btn-outline-light:focus,
+a.btn-outline-light:hover,
+a.btn-outline-light:focus {
+    background-color: var(--tertiary-color) !important;
+    color: #ffffff !important;
+}
+
+
+/* Banner */
+.banner {
+    background: linear-gradient(100deg,
+            rgba(0, 0, 0, 0.7),
+            /* Oscurece la imagen para que el texto resalte */
+            rgba(0, 0, 0, 0.2)),
+        url('/img/img_inicio2.jpg') center/cover no-repeat;
+    /* Imagen de fondo para el banner */
+    min-height: 70vh;
+    /* Mayor altura para el banner */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Centra el contenido */
+    text-align: center;
+}
+
+.banner h3 {
+    font-size: 1.5rem;
+    /* Tamaño de fuente ajustado */
+    font-weight: 500;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px #000;
+}
+
+.banner h2 {
+    font-size: 4rem;
+    /* Tamaño de fuente más grande para el título principal */
+    font-weight: 700;
+    color: #ffffff;
+    text-shadow: 1px 1px 3px #000;
+}
+
+
+/* Sección de beneficios */
+.fa-2x {
+    color: var(--primary-color);
+    margin-right: 0.5rem;
+}
+
+/* Servicios y categorías */
+
+.bg-servicios {
+    background-color: #ffffff;
+}
+
+.card-categoria {
+    min-height: 250px;
+    /* Mayor altura para las tarjetas de servicio */
+    border-radius: 1.5rem;
+    background-size: cover;
+    background-position: center bottom;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: white;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 3px #000;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Transición para efecto hover */
+}
+
+.card-categoria:hover {
+    transform: translateY(-5px);
+    /* Efecto de elevación al pasar el ratón */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    /* Sombra más intensa al pasar el ratón */
+}
+
+.card-categoria p {
+    font-size: 2.2rem;
+    /* Tamaño de fuente ajustado */
+    position: relative;
+    font-weight: 700;
+}
+
+.card-categoria:hover p {
+    font-size: 2.5rem;
+    transition: font-size 0.3s ease;
+}
+
+.card-categoria p::after {
+    content: '';
+    width: 3rem;
+    /* Línea más larga */
+    height: 3px;
+    /* Línea más gruesa */
+    background-color: white;
+    position: absolute;
+    bottom: -1rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Productos (ahora Portafolio) */
+.btn-primary.active {
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
+    border: none;
+}
+
+.btn-primary.active:hover,
+.btn-primary.active:focus {
+    background-color: var(--primary-color) !important;
+    color: #ffffff;
+}
+
+.btn-outline-primary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:active {
+    background-color: var(--tertiary-color) !important;
+    border-color: var(--tertiary-color) !important;
+}
+
+.btn-solid-primary {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 12px 25px;
+    border-radius: 50px;
+    /* Botón más redondeado */
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-solid-primary:hover {
+    background-color: var(--tertiary-color) !important;
+    color: #ffffff !important;
+    transform: translateY(-3px);
+}
+
+.text-color {
+    color: var(--primary-color) !important;
+}
+
+/* Galería (ahora Inspiración) */
+.img-fluid {
+    border-radius: 0.8rem;
+    /* Bordes más redondeados para las imágenes */
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    /* Sombra para las imágenes */
+}
+
+.bg-light {
+    background-color: #f0f0f0 !important;
+    /* Fondo más claro para la sección de galería */
+}
+
+/* Blogs */
+.card .card-text small {
+    color: var(--primary-color);
+}
+
+.btn-read-more {
+    border-radius: 2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 0.8rem 2rem;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    transition: all 0.3s ease;
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 1.5rem;
+}
+
+.btn-read-more:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-color: var(--primary-color);
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 3rem 0;
+}
+
+footer h5 {
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+footer a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--tertiary-color);
+}
+
+footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+footer ul li {
+    margin-bottom: 0.8rem;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+footer .social-icons a {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    color: var(--secondary-color);
+    transition: color 0.3s ease;
+}
+
+footer .social-icons a:hover {
+    color: var(--tertiary-color);
+}
+
+.text-white:hover i {
+    color: var(--tertiary-color);
+}
+
+.text-white.text-decoration-none:hover {
+    color: var(--tertiary-color) !important;
+    transition: color 0.2s;
+}
+
+.btn-dark {
+    background-color: var(--tertiary-color);
+    color: #ffffff;
+    border-radius: 50px;
+    /* Botón más redondeado */
+    padding: 10px 20px;
+    font-weight: 600;
+}
+
+.btn-dark:hover {
+    border-color: var(--secondary-color) !important;
+    background-color: var(--primary-color) !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .banner h2 {
+        font-size: 2.8rem;
+    }
+
+    .banner h3 {
+        font-size: 1.3rem;
+    }
+
+    .navbar-nav .nav-link {
+        text-align: center;
+    }
+
+    .card-categoria p {
+        font-size: 1.8rem;
+    }
+}
+
+.product-card {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.drop-shadow-lg {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.drop-shadow-md {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+
+/* Estilos específicos para la página del blog */
+.blog-header {
+    background: linear-gradient(100deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)),
+        url('/img/blog1.jpg') center/cover no-repeat;
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-bottom: 3rem;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.blog-header2 {
+    background: linear-gradient(100deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)),
+        url('/img/blog2.jpg') center/cover no-repeat;
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-bottom: 3rem;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.blog-header3 {
+    background: linear-gradient(100deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)),
+        url('/img/blog3.jpg') center/cover no-repeat;
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-bottom: 3rem;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.blog-header h1,
+.about-header h1,
+.faq-header h1 {
+    /* Added faq-header h1 here */
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.blog-header .blog-meta {
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.blog-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.blog-content p,
+.about-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.blog-content h2,
+.blog-content h3,
+.about-content h2 {
+    color: var(--primary-color);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.blog-content ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 1.5rem;
+}
+
+.blog-content ul li {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+.author-box {
+    background-color: #f8f8f8;
+    border-left: 5px solid var(--primary-color);
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 3rem;
+}
+
+.author-box img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.author-box h5 {
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+
+.author-box p {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 0;
+}
+
+/* Estilos específicos para la página Acerca de Nosotros */
+.about-header {
+    background: linear-gradient(100deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), var(--primary-color);
+    /* Generic background */
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-bottom: 3rem;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Added h1 to about-header */
+.about-header h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.team-member {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 4px solid var(--primary-color);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.team-member h4 {
+    color: var(--tertiary-color);
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.team-member p {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 0;
+}
+
+
+/* Estilos específicos para la página de Preguntas Frecuentes */
+.faq-header {
+    background: linear-gradient(100deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), var(--primary-color);
+    /* Generic background */
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-bottom: 3rem;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.faq-section h2 {
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+
+.accordion-item {
+    border: 1px solid var(--primary-color);
+    margin-bottom: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    /* Ensures border-radius applies correctly */
+}
+
+.accordion-button {
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    padding: 15px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--secondary-color);
+    color: var(--tertiary-color);
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .125);
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.accordion-button:focus {
+    box-shadow: 0 0 0 0.25rem var(--secondary-color);
+    /* Primary color with transparency */
+    border-color: var(--secondary-color);
+}
+
+.accordion-body {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #444;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
