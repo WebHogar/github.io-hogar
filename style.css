@@ -84,7 +84,7 @@ a.btn-outline-light:focus {
 
 /* Banner */
 .banner {
-    background: linear-gradient(100deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), center/cover no-repeat;
+    background: linear-gradient(100deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2));
     /* Imagen de fondo para el banner */
     min-height: 70vh;
     /* Mayor altura para el banner */
@@ -93,6 +93,36 @@ a.btn-outline-light:focus {
     justify-content: center;
     /* Centra el contenido */
     text-align: center;
+}
+
+/* Móvil: imagen pequeña */
+@media (max-width: 600px) {
+  .banner {
+    background-image: linear-gradient(100deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url('./img/img_inicio400.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+/* Tablets y pantallas medianas */
+@media (min-width: 601px) and (max-width: 1200px) {
+  .banner {
+    background-image:linear-gradient(100deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url('./img/img_incio800.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+/* Escritorio y pantallas grandes */
+@media (min-width: 1201px) {
+  .banner {
+    background-image: linear-gradient(100deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url('./img/img_inicio1500.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
 
 .banner h2 {
