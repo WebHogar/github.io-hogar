@@ -360,11 +360,11 @@ footer .social-icons a:hover {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-    .banner h2 {
+    .banner h1 {
         font-size: 2.8rem;
     }
 
-    .banner h3 {
+    .banner h2 {
         font-size: 1.3rem;
     }
 
