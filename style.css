@@ -98,7 +98,7 @@ a.btn-outline-light:focus {
 /* Móvil: imagen pequeña */
 @media (max-width: 600px) {
     .banner {
-        background-image: linear-gradient(100deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url('./img/img_incio800.webp');
+        background-image: linear-gradient(100deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url('./img/img_inicio2.webp');
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
